@@ -1,0 +1,22 @@
+obj manager
+create
+student
+book
+cancel after done
+fields  -> new author, class
+settings icon 
+setup
+search tab
+Tabs
+new
+select objects created by us
+settings icon 
+setup
+search app
+Apps 
+App manager
+new lightning app
+library management system
+click on the dot grid on the left below the cloud
+search app name
+done

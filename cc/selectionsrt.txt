@@ -1,0 +1,35 @@
+public class selectionsrt {
+
+    public static void sSort(Integer[] arr) {
+    Integer n = arr.size();
+
+    for (Integer i = 0; i < n-1 ; i++) {
+        Integer min_idx = i;
+        
+      for (Integer j = i+1; j < n ; j++) {
+        
+          if (arr[min_idx] > arr[j]) {
+          
+              min_idx = j;
+                      
+         }
+              
+      }
+        Integer temp = arr[i];
+        arr[i] = arr[min_idx];
+        arr[min_idx] = temp;
+   }
+}
+
+  public static void selection()
+  {
+    Integer[] arr = new Integer[]{16,19,12,45,13,1,2,4,9};
+    System.debug('Array before sorting: ' + String.join(arr,','));
+    sSort(arr);
+    System.debug('Array after sorting: ' + String.join(arr,','));
+  }
+}
+
+/*
+selectionsrt.selection();
+*/

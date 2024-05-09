@@ -1,0 +1,24 @@
+public class primeLoop {
+    public static void findPrimeNumber(Integer lowerLimit, Integer upperLimit){
+        for(Integer i = lowerLimit; i<= upperLimit; i++){
+            Boolean isPrime = true;
+            for(Integer j =2; j <= Math.sqrt(i); j++){
+                if(Math.mod(i, j) == 0){
+                    isPrime = false;
+                    break;
+                }
+            }
+            if(isPrime && i>1){
+                System.debug(i);
+            }
+        }
+    }
+    
+}
+
+
+/*
+Integer lowerLimit = 1;
+Integer upperLimit = 69;
+primeLoop.findPrimeNumber(lowerLimit,upperLimit);
+*/

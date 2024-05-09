@@ -1,0 +1,32 @@
+public class bblsrt {
+    // Method to perform bubble sort
+    public static void bubbleSort(List<Integer> arr) {
+        Integer n = arr.size();
+        for(Integer i = 0; i < n-1; i++) {
+            for(Integer j = 0; j < n-i-1; j++) {
+                if(arr[j] > arr[j+1]) {
+                    // Swap arr[j] and arr[j+1]
+                    Integer temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                }
+            }
+        }
+    }
+    
+    // Method to display array elements
+    public static void printArray(List<Integer> arr) {
+        for(Integer i = 0; i < arr.size(); i++) {
+            System.debug(arr[i]);
+        }
+    }
+}
+
+
+
+
+/*
+List<Integer> arr = new List<Integer>{64, 34, 25, 12, 22, 11, 90};
+bblsrt.bubbleSort(arr);
+bblsrt.printArray(arr);
+*/
