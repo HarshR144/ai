@@ -1,0 +1,16 @@
+public class odevn{
+    public static String evenNumber(Integer num){
+        if(Math.mod(num, 2)==0){
+            return 'Even Number';
+        }
+        else 
+        {
+            return 'Odd Number';
+        }
+    }
+}
+
+
+/*
+System.debug(odevn.evenNumber(24));
+*/
